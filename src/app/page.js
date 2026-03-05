@@ -1,8 +1,8 @@
 import Navbar from "../components/Navbar"
 import Hero from "../components/Hero"
 import Solutions from "../components/Solutions"
-import Products from "../Products"
-import Partners from "../components/Partners"
+import Products from "../products"
+import Partners from "../partners"
 import Footer from "../components/Footer"
 
 export default function Home(){
