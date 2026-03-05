@@ -1,53 +1,33 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+export default function Partners(){
 
-export default function Partners() {
+return(
 
-  return (
-    <main>
+<section className="py-24">
 
-      <Navbar />
+<div className="max-w-6xl mx-auto text-center">
 
-      <section className="page">
+<h2 className="text-4xl font-bold mb-12">
 
-        <div className="container">
+Strategic Partners
 
-          <h1>Strategic Partners</h1>
+</h2>
 
-          <div className="grid">
+<div className="flex justify-center gap-16">
 
-            <div className="card">
+<div className="text-lg font-semibold">
+Span Media
+</div>
 
-              <h2>Span Media</h2>
+<div className="text-lg font-semibold">
+Srijan Labs
+</div>
 
-              <p>
-                Technology partner specializing in digital signage,
-                LED displays and commercial display systems for
-                enterprise communication and branding infrastructure.
-              </p>
+</div>
 
-            </div>
+</div>
 
-            <div className="card">
+</section>
 
-              <h2>Srijan Labs</h2>
+)
 
-              <p>
-                Digital infrastructure and embedded technology partner
-                supporting hardware development, CMS platforms and
-                digital signage ecosystem technologies.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      <Footer />
-
-    </main>
-  );
 }

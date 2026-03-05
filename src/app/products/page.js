@@ -1,28 +1,55 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+export default function Products(){
 
-export default function Products() {
-  return (
-    <>
-      <Navbar />
+return(
 
-      <div className="max-w-6xl mx-auto py-20 px-6">
+<section className="py-24 bg-gray-50">
 
-        <h1 className="text-4xl font-bold mb-8">
-          Our Products
-        </h1>
+<div className="max-w-7xl mx-auto px-6">
 
-        <ul className="space-y-4 text-lg text-gray-600">
-          <li>Server Racks</li>
-          <li>Network Cabinets</li>
-          <li>Outdoor Enclosures</li>
-          <li>Digital LED Displays</li>
-          <li>Telecom Installation Materials</li>
-        </ul>
+<h2 className="text-4xl font-bold text-center mb-16">
 
-      </div>
+Enterprise Technology Products
 
-      <Footer />
-    </>
-  );
+</h2>
+
+<div className="grid md:grid-cols-3 gap-10">
+
+<div className="bg-white rounded-xl p-8 shadow">
+
+<h3 className="text-xl font-semibold">
+
+Server Racks
+
+</h3>
+
+</div>
+
+<div className="bg-white rounded-xl p-8 shadow">
+
+<h3 className="text-xl font-semibold">
+
+Outdoor Telecom Cabinets
+
+</h3>
+
+</div>
+
+<div className="bg-white rounded-xl p-8 shadow">
+
+<h3 className="text-xl font-semibold">
+
+Digital Displays
+
+</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+)
+
 }

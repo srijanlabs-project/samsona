@@ -1,47 +1,72 @@
+export default function Solutions(){
 
-export default function Solutions() {
+const solutions = [
 
-  const solutions = [
-    {
-      title: "Telecom & IT Infrastructure",
-      desc: "Server racks, telecom cabinets, networking infrastructure and installation components."
-    },
-    {
-      title: "Digital Display & Signage",
-      desc: "Commercial displays, LED screens, digital standees and enterprise signage solutions."
-    },
-    {
-      title: "Enterprise Experience Centers",
-      desc: "Corporate branding environments, video walls and digital customer engagement systems."
-    },
-    {
-      title: "Workforce & Staffing Solutions",
-      desc: "Technical workforce deployment, operational manpower and compliance managed staffing."
-    }
-  ];
+{
+title:"Telecom Infrastructure",
+desc:"Server racks, outdoor cabinets and telecom deployment systems."
+},
 
-  return (
-    <section className="solutions">
+{
+title:"Digital Displays",
+desc:"Commercial LED displays, kiosks and enterprise signage."
+},
 
-      <div className="container">
+{
+title:"Enterprise Experience Centers",
+desc:"Video walls, digital branding systems and immersive environments."
+},
 
-        <h2>Core Solutions</h2>
+{
+title:"Workforce Solutions",
+desc:"Technical manpower deployment and enterprise staffing."
+}
 
-        <div className="grid">
+]
 
-          {solutions.map((s, index) => (
-            <div key={index} className="card">
+return(
 
-              <h3>{s.title}</h3>
-              <p>{s.desc}</p>
+<section className="py-24 bg-white">
 
-            </div>
-          ))}
+<div className="max-w-7xl mx-auto px-6">
 
-        </div>
+<h2 className="text-4xl font-bold text-center mb-16">
 
-      </div>
+Core Solutions
 
-    </section>
-  );
+</h2>
+
+<div className="grid md:grid-cols-4 gap-8">
+
+{solutions.map((s,i)=>(
+
+<div
+key={i}
+className="p-8 border rounded-xl hover:shadow-xl transition"
+>
+
+<h3 className="text-xl font-semibold">
+
+{s.title}
+
+</h3>
+
+<p className="mt-4 text-gray-600">
+
+{s.desc}
+
+</p>
+
+</div>
+
+))}
+
+</div>
+
+</div>
+
+</section>
+
+)
+
 }

@@ -1,28 +1,30 @@
+import Navbar from "../components/Navbar"
+import Hero from "../components/Hero"
+import Solutions from "../components/Solutions"
+import Products from "../components/Products"
+import Partners from "../components/Partners"
+import Footer from "../components/Footer"
 
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import Solutions from "../components/Solutions";
-import Industries from "../components/Industries";
-import LeadForm from "../components/LeadForm";
-import Footer from "../components/Footer";
+export default function Home(){
 
-export default function Home() {
+return(
 
-  return (
-    <main>
+<main>
 
-      <Navbar />
+<Navbar/>
 
-      <Hero />
+<Hero/>
 
-      <Solutions />
+<Solutions/>
 
-      <Industries />
+<Products/>
 
-      <LeadForm />
+<Partners/>
 
-      <Footer />
+<Footer/>
 
-    </main>
-  );
+</main>
+
+)
+
 }
