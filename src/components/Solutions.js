@@ -1,25 +1,33 @@
+"use client"
+
+import { Server, MonitorSmartphone, Users, Building2 } from "lucide-react"
+
 export default function Solutions(){
 
 const solutions = [
 
 {
-title:"Telecom Infrastructure",
-desc:"Server racks, outdoor cabinets and telecom deployment systems."
+icon: Server,
+title: "Telecom & IT Infrastructure",
+desc: "Server racks, telecom cabinets, networking infrastructure and deployment systems."
 },
 
 {
-title:"Digital Displays",
-desc:"Commercial LED displays, kiosks and enterprise signage."
+icon: MonitorSmartphone,
+title: "Digital Displays & Signage",
+desc: "LED displays, digital standees, commercial screens and interactive kiosks."
 },
 
 {
-title:"Enterprise Experience Centers",
-desc:"Video walls, digital branding systems and immersive environments."
+icon: Building2,
+title: "Enterprise Experience Centers",
+desc: "Video walls, immersive digital branding environments and corporate display systems."
 },
 
 {
-title:"Workforce Solutions",
-desc:"Technical manpower deployment and enterprise staffing."
+icon: Users,
+title: "Workforce & Staffing Solutions",
+desc: "Technical manpower deployment and enterprise workforce solutions."
 }
 
 ]
@@ -32,34 +40,42 @@ return(
 
 <h2 className="text-4xl font-bold text-center mb-16">
 
-Core Solutions
+Enterprise Solutions
 
 </h2>
 
-<div className="grid md:grid-cols-4 gap-8">
+<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
 
-{solutions.map((s,i)=>(
+{solutions.map((item,i)=>{
+
+const Icon = item.icon
+
+return(
 
 <div
 key={i}
-className="p-8 border rounded-xl hover:shadow-xl transition"
+className="p-8 rounded-xl border hover:shadow-xl transition duration-300 group"
 >
 
-<h3 className="text-xl font-semibold">
+<Icon className="w-10 h-10 text-red-500 mb-6 group-hover:scale-110 transition"/>
 
-{s.title}
+<h3 className="text-xl font-semibold mb-4">
+
+{item.title}
 
 </h3>
 
-<p className="mt-4 text-gray-600">
+<p className="text-gray-600 text-sm leading-relaxed">
 
-{s.desc}
+{item.desc}
 
 </p>
 
 </div>
 
-))}
+)
+
+})}
 
 </div>
 
