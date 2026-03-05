@@ -1,21 +1,29 @@
 export default function Hero() {
   return (
-    <section className="bg-black text-white py-32">
+    <section className="hero">
 
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="container">
 
-        <h1 className="text-5xl font-bold">
-          Integrated Business Solutions
+        <h1>
+          Enterprise Digital Infrastructure
+          & Technology Solutions
         </h1>
 
-        <p className="mt-6 text-xl text-gray-300">
-          Telecom Infrastructure, Staffing and
-          Digital Display Solutions
+        <p>
+          Samsona Services Pvt Ltd delivers telecom infrastructure,
+          digital display networks, enterprise branding environments,
+          and workforce deployment solutions.
         </p>
 
-        <button className="mt-8 bg-red-600 px-8 py-4 rounded">
-          Request Proposal
-        </button>
+        <div className="hero-buttons">
+          <a href="/services" className="btn-primary">
+            Explore Solutions
+          </a>
+
+          <a href="/contact" className="btn-secondary">
+            Contact Experts
+          </a>
+        </div>
 
       </div>
 

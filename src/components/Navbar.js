@@ -1,29 +1,24 @@
-"use client";
-
 import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="bg-white shadow">
+    <nav className="navbar">
+      <div className="container nav-inner">
 
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between">
+        <div className="logo">
+          <img src="/images/logo.jpeg" alt="Samsona Logo" />
+        </div>
 
-        <h1 className="text-2xl font-bold text-red-600">
-          Samsona
-        </h1>
-
-        <div className="space-x-6">
-
+        <div className="nav-links">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
-          <Link href="/services">Services</Link>
+          <Link href="/services">Solutions</Link>
           <Link href="/products">Products</Link>
+          <Link href="/partners">Partners</Link>
           <Link href="/contact">Contact</Link>
-
         </div>
 
       </div>
-
     </nav>
   );
 }
