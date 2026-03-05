@@ -6,7 +6,7 @@ export default function Navbar() {
       <div className="container nav-inner">
 
         <div className="logo">
-          <img src="/images/logo.jpeg" alt="Samsona Logo" />
+          <img src="/images/logo.jpeg" alt="Samsona Logo" style=" height: 80px;  width: 80px;" />
         </div>
 
         <div className="nav-links">
