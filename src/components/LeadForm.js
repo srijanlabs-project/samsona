@@ -1,4 +1,4 @@
-"use client";
+/*"use client";
 
 import { useState } from "react";
 
@@ -55,7 +55,8 @@ export default function LeadForm() {
 
   return (
 
-    <form onSubmit={handleSubmit}>
+
+   <form onSubmit={handleSubmit}>
 
       <input
         name="name"
@@ -91,7 +92,8 @@ export default function LeadForm() {
         Submit
       </button>
 
-    </form>
+    </form> 
+   
 
   );
-}
+} */
